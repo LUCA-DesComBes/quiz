@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+:root {
+  --light: 300; 
+  --regular: 400;
+  --medium: 500;
+  --grey_navy: #626C7F; 
+  --dark_navy: #313E51;
+  --italic: 14px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(221, 218, 206);
+    color: var(--dark_navy);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--light);
+    font-style: normal;
+}
+header {
+    display: flex;
+    align-items: center; justify-content: start;
+    margin: 26px 24px 58px 271px;
+    gap: 8px;
+} 
+main {
+    padding: 0px 24px;
+}
+h1 {
+    font-weight: 300;
+    width: 283px;
+    margin-bottom: 16px;
+}
+span {
+    font-weight: 500;
+}
+i {
+    font-weight: 400;
+    color: var(--grey_navy);
+    font-size: var(--italic);
+    margin-bottom: 40px;
+}
+.competence {
+    display: flex;
+    align-items: center; justify-content: start;
+    background-color: #fff;
+    padding-left: 12px;
+    width: 327px;
+    height: 64px;
+    border-radius: 12px;
+    gap: 16px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+}
+a {
+    color: var(--dark_navy);
+    text-decoration: none;
+}

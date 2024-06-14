@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.css">
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header>
+      <img src="./public/fluent_weather-sunny-16-regular.svg" alt="sun">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <img src="./public/fluent_weather-moon-16-regular.svg" alt="moon">
+  </header>
+  <main>
+    <h1>Welcome to the <span>Frontend Quiz!</span></h1>
+    <i>Pick a subject to get started.</i>
+    <section>
+      <a href="./question_html.html">
+    <div class="competence">
+      <img src="./public/HTML.png" alt="html">
+      <h2>HTML</h2>
+    </div>
+  </a>
+    <div class="competence">
+      <img src="./public/CSS.png" alt="css">
+      <h2>CSS</h2>
+    </div>
+    <div class="competence">
+      <img src="./public/JS.png" alt="js">
+      <h2>Javascript</h2>
+    </div>
+      <div class="competence" >
+      <img src="./public/ACCESSIBILITY.png" alt="accessibility">
+      <h2>Accessibility</h2>
+    </div>
+  </section>
+  </main>
     <script src="main.js"></script>
   </body>
 </html>
