@@ -3,7 +3,7 @@ let questions = [];
 let score = 0;
 
 async function logQuestion() {
-    const response = await fetch("https://quizapi.io/api/v1/questions?apiKey=mDGC0RdZZy77EtYTNMd2OlIag6BEQ9JN2bqWfHiO&category=code&difficulty=Medium&limit=10&tags=HTML");
+    const response = await fetch("https://quizapi.io/api/v1/questions?apiKey=mDGC0RdZZy77EtYTNMd2OlIag6BEQ9JN2bqWfHiO&difficulty=Easy&limit=10&tags=JavaScript");
     questions = await response.json();
     console.log(questions);
     displayQuestion(currentQuestionIndex);
@@ -31,18 +31,19 @@ function displayQuestion(index) {
     const submitButton = document.querySelector(".submit");
     submitButton.addEventListener('click', (event) => {
         const selectedAnswer = document.querySelector(`input[name="question${index}"]:checked`);
-
+    
         if (selectedAnswer) {
             const answerKey = selectedAnswer.value;
-            const isCorrect = questions[index].correct_answers[`${answerKey}_correct`] === "true";
-
+            const isCorrect = questions[index].correct_answers[`${answerKey}_correct`] === "true"; // Adjust this line
+    
+            // Update styles based on correctness
             if (isCorrect) {
-                selectedAnswer.parentElement.style.accentColor = "greenyellow";
+                selectedAnswer.parentElement.style.accentColor = "greenyellow"; // Example style change
                 score++;
             } else if (isCorrect !== "true" || isCorrect === "true") {
-                selectedAnswer.parentElement.style.accentColor = "red";
+                selectedAnswer.parentElement.style.accentColor = "red"; // Example style change
             }
-
+    
             setTimeout(() => {
                 currentQuestionIndex++;
                 if (currentQuestionIndex < questions.length) {
@@ -63,8 +64,8 @@ function displayResults() {
         <p class="completed">Quiz completed <strong>You scored ${score}</strong></p>
         <section class="result">
             <div class="chose">            
-                <img src="./public/HTML.png" alt="html">
-                <h2>HTML</h2>
+                <img src="./public/JS.png" alt="html">
+                <h2>Javascript</h2>
             </div>  
             <p class="score">${score}</p>
             <p class="out">out of 10</p>

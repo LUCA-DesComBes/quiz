@@ -1,11 +1,4 @@
-    .correct-answer::before {
-        accent-color: greenyellow;
-    }
-    .incorrect-answer::before {
-        accent-color: red;
-    }
-
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
 :root {
   --light: 300; 
@@ -109,4 +102,51 @@ a {
 .rectangle:active, p:active {
     color: #fff;
     background-color: var(--submit);
-} */
+}
+.completed {
+    width: 281px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.result  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 327px;
+    height: 242px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.result .chose {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+.score {
+    font-size: 88px;
+    color: var(--dark_navy);
+    font-weight: var(--medium);
+}
+.out {
+    font-size: 18px;
+    color: var(--grey_navy);
+    font-weight: var(--regular);
+}
+.again {
+    font-family: "Rubik", sans-serif;
+    background-color: var(--submit);
+    color: #fff;
+    font-weight: var(--medium);
+    border: none;
+    font-size: 18px;
+    width: 327px;
+    height: 56px;
+    padding: 19px 118px;
+    border-radius: 12px;
+    margin-bottom: 139px;
+}

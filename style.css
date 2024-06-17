@@ -28,6 +28,9 @@ header {
     margin: 26px 24px 58px 271px;
     gap: 8px;
 } 
+article {
+    padding: 0px 24px;
+}
 main {
     padding: 0px 24px;
 }
